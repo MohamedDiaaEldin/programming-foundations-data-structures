@@ -1,0 +1,35 @@
+*** this information could be diffrent from language to another
+
+Signed data types :
+    contains positive and negative values 
+Unsigned data types :
+    contains only positive values and doubles the positive values range 
+
+    example:  if we have signed short with range -32768 to 32767
+              the unsigned range of short  will be from 0 to 65535 
+
+
+
+primitive data types :
+    - is the basic building block of any piece of data  
+    - we can build more data complex data structuer using primitive data types 
+
+
+
+
+Whole number :
+    short   --->  -32768 to 32767             ----> 16 bits 
+    int     --->  -2billion  to 2 billions    ----> 32 bits 
+    long    --->  -2^63  to 2^63              ----> 64 bits 
+
+Decimal Numbers :
+    float   ---->  7 decimal digits           ----> 32 bits
+    double  ---->  16 decimal digits          ----> 64 bits
+
+Booleans:
+    True  --> 1 --> on
+    False --> 0 --> Off
+
+String :
+    is a data type describes a sequence of characters  
+    in other words it's array of characters
