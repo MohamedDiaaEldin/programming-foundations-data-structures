@@ -1,0 +1,26 @@
+array : - is a collection of data 
+        - every piece of data can be access using indexes    
+            example : 
+                     index 0    index 1  index 2
+                        ^        ^          ^
+                        |        |          |     
+                    ["Mohamed", "Ali", "Hossam"]
+        
+        - if we tried to access index that is not included in the array the
+             programe with throw an exception "out of range" in run time
+
+
+example using  swift : using array that store integers and calculate the
+                       sum and the averages of students grades 
+
+var grades  = [10, 15, 5]
+var sum = 0
+
+for grade in grades {
+    sum += grade
+}
+print("sum is :", sum)
+
+var average = sum / grades.count
+print("average is :", average)
+

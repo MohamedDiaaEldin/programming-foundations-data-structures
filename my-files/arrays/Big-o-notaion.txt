@@ -1,0 +1,12 @@
+Big O Notaion :
+    is a way to measure the time complexity in any algorithm 
+
+o(1) : constant time 
+    - like access array using indexes
+    - delete element that we  know it's index 
+    - access keys in hash tables
+
+
+o(n) : linear time 
+      - the time will increase with the size of the input
+      - like access all array elements to search for something using a loop 

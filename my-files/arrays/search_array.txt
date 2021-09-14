@@ -1,0 +1,26 @@
+
+Example in java :  to search for a name in String array 
+
+        String[] studentNames = new String[]{"mohamed", "Ali", "Hossam"} ;
+        String nameToSearch = "Ali" ;
+        for (int i=0 ; i<studentNames.length ; i++){
+              if(studentNames[i].equals(nameToSearch)){
+                   System.out.println("Found: "+ studentNames[i]);
+                   break ;
+              }
+        }
+
+
+this kind of search is called linear search 
+this kind of search is slow especially while the size of the array is bigger
+and the time will increase with the size of array
+    the idea is to loop over every element in the array
+    and check if the current element equals to the name that i want to search 
+
+sorting an array will give us change to search for much shorter time
+
+the best case to find the wanted element ---> when the element in index 0
+the worst case to find the wanted element ---> when the element in index ( array size - 1 )
+
+
+

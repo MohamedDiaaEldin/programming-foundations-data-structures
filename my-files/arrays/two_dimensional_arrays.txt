@@ -1,0 +1,57 @@
+* multidimensional array : consists from more than on array dimensional array 
+                         every row is a array 
+                         to access the first row we can use muli_array[0] which is an array
+                         to access the first element in the first row muli_array[0][0]                      
+
+
+
+* Example in javaScript : print all array items  
+
+var path_choices = [["javaScript", "HTML", "CSS"], ["JAVA", "Spring", "Angular"],
+                     ["python", "Django", "Flask", "SqlAlqamey"]]
+
+for (var row=0 ; row < path_choices.length ; row++){
+    
+    for (var column = 0 ; column < path_choices[row].length ; column++){
+        console.log(path_choices[row][column])
+    }
+    
+}
+
+
+
+
+* Example in c# : fill a multidimensional array and print its items 
+
+        string[] first_path = {"JavaScript", "HTML", "CSS"};
+        string[] second_path = { "JAVA", "Spring", "Angular" } ;
+        string[] third_path  =  { "python", "Django", "Flask", "SqlAlqamey" } ;
+        
+        // fill array with pathes
+
+        String[][] path_choices = new String[3][] ;
+        
+        for (int row=0 ; row<path_choices.Length; row++){
+            switch(row) 
+                {
+                  case 0:
+                    path_choices[row] = first_path ;
+                    break;
+                  case 1:
+                     path_choices[row] = second_path ;
+                  break;
+                  default:
+                     path_choices[row] = third_path ;
+                    break;
+                }
+        }
+        
+        
+        // print pathes 
+
+        for (int row=0 ; row<path_choices.Length; row++){
+            for (int column=0; column<path_choices.Length ; column++ ){
+                Console.WriteLine(path_choices[row][column]) ;   
+            }
+            
+        } 
