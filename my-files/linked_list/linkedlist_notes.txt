@@ -1,0 +1,25 @@
+linked list is a group of nodes which is connected to each other using pointers 
+
+general notes :
+  add last or first is            o(1)
+  remove last or first is         o(1)
+  
+  add at index is                 o(n)
+  remove at index is              o(n)
+  
+  get element by index is         o(n)
+  search or access element is     o(n)
+
+
+
+single linked list : it contains a head (first node)reference in single linked list
+     each node contains only next reference  
+        add first is         o(1) 
+        add last is          o(n)
+        add in the middle is o(n)
+
+doubly linked list : it contains a head AND tail (last node) reference in doubly linked list
+      each node contains a next and pervious references
+        add first is         o(1) 
+        add last is          o(1) 
+        add in the middle is o(n)
