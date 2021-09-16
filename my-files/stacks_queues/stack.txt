@@ -1,0 +1,13 @@
+stack : - is a double linked list (we can represent it with array)
+        - add at the top queue 
+        - remove from begening of queue  
+                (first in , first out (FIFO)) 
+        
+        - it's useful while keeping track of state or the order of when things that have accrued
+        - it's useful while reverse a string
+
+
+
+adding item to the queue is called      : Enqueue    o(1)
+removeing item from the queue is called : Dequeue    o(1)
+

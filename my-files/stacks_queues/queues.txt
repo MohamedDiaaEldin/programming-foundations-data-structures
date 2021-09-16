@@ -1,0 +1,24 @@
+queue : - is a double linked list (we can represent it with array)
+        - add and remove always from the top (Last in , First out (LIFO) )
+        - it's useful while keeping track of state or the order of when things that have accrued
+
+        
+adding item to the stack is called      : Push   o(1)
+removeing item from the stack is called : Pop    o(1)
+
+
+Priority queue
+
+    - each element has a priority associated with it 
+       so the first element will Dequeue is the element with highest priority
+
+    - defining a priority needs an implementation to comparator and compare method
+    
+    - example : giving a priority to queue element to pop the smallest number 
+              it's helpul while implementing some of graph algorithms 
+
+
+Dequek :
+    - it's a stack and queue in the same time 
+    - we can choice either stack or queue operation that we want 
+    - we can not remove from any where else from the collection 
