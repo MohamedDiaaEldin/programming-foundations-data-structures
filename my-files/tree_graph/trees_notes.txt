@@ -1,0 +1,74 @@
+trees : are composed of nodes 
+        each node maybe connected to one or more nodes 
+        the start point is the root node 
+        each node may have childs and parent 
+        root may have childs but it has not parent 
+        example 
+            node_a
+            /   \     
+        node_b  node_c
+        
+            - node_a is a parent node 
+            - node_b and node_c are child nodes  
+            - node_b and node_c are siblings
+                child nodes with the same parent are called siblings 
+            - node_b and node_c are leaf
+                a node with no childs is called leaf node 
+binary tree (BST)  :
+    -it's a rormal tree which each node has only two child nodes 
+    - exampel : 
+         node_a
+            /   \
+        node_b  node_c
+        
+        node_b is called left node 
+        node_c is called right node         
+
+    - it a data structure that naturally is sorted 
+        beacuse of  - the left child node must be less than the parent node
+                    - the right child node must be gratter than the parent node  
+            example :
+                  30
+                /    \   
+               20     40
+              / \     / \
+                 25  35  50
+                            \
+                             60
+                              \
+                               70
+        when we have more than node in any side of the root node 
+            it's called unbalanced binary tree
+            so we may need do more checks to search , insert and delete  
+    
+    prons : it takes o(log(n)) to search for element if the tree is balanced
+                it may take linear time o(n) if the tree is unbalanced        
+
+
+heap tree :
+    - it's a rormal tree 
+    - which every level in the tree must be completed to be able to add to the next level 
+        so we will not have unbalanced tree like binary tree
+    max heap : - the root will have the maximum value  
+               - any child must be less than the parent node  
+            example 
+                7
+               / \
+              6    5 
+    
+    max heap : - the root will have the minimum value  
+               - any child must be more than the parent node  
+               example 
+                   5
+                 /    \
+               18      10
+               / \    / \ 
+              50 20  15  35
+
+                - it's usful while implementing priotity queues
+    - prons :
+        it take o(1) to find the min value in min heap 
+        it take o(1) to find the max value in max heap 
+        insert takes o(log(n))
+    - cons  :
+        searching and deleting takes o(n)
