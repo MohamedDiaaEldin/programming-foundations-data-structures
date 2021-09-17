@@ -1,0 +1,5 @@
+- each key must be uniqe 
+- order isn't important 
+the same idea with hash tables but there is no values
+example
+  with key "mohamed" --- ASCI value of "mohamed" --> -- hash function --> hash value % array lenght --> index 5
