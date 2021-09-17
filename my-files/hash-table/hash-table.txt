@@ -1,0 +1,25 @@
+hash table : 
+    the key is hashed by hash function which produces a index in range of array lenght 
+    hashing in one way so there is no way to move from hash value to the original data 
+    
+    example :
+            with key "mohamed" --- ASCI value of "mohamed" --> -- hash function --> hash value % array lenght --> index 5
+            so every time you try to access 'mohamed' it will be translated to index 5
+            - the same input will have the same hash value 
+   
+    collision :
+            it happens when two diffrent values have the same hash value  
+            and we don't that 
+            - solutions :
+                - create a linked list with key values 
+                - there are  other technic 
+
+    - key and value are bound together 
+    - each key must be uniqe 
+    - order isn't important 
+    - every key have a value 
+
+
+prons and cons :
+    searching , deletion , insertion  --->  o(1)
+        except if we have collision the complexty with change depends on number of collision values 
